@@ -26,7 +26,7 @@ function RouteLink({ path, actualRoute, handleClick, children }: RouteLinkProps)
   )
 }
 
-export function Sidebar() {
+export default function Sidebar() {
   const router = useRouter()
   const actualRoute = useBoundStore((state) => state.actualRoute)
   const saveRoute = useBoundStore((state) => state.setActualRoute)
