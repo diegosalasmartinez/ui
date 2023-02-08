@@ -58,6 +58,11 @@ export default function Sidebar() {
                 <p>Modal</p>
               </RouteLink>
             </li>
+            <li>
+              <RouteLink path='/alert' actualRoute={actualRoute} handleClick={handleClick}>
+                <p>Alert</p>
+              </RouteLink>
+            </li>
           </ul>
         </div>
       </div>
