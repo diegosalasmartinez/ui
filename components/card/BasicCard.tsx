@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { cn } from '@/utils/style'
-import FlatButton from '../button/FlatButton'
+import FlatButton from '@/components/button/FlatButton'
 
 interface BasicCardProps {
   title: string
