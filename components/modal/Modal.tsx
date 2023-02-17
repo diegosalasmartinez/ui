@@ -1,4 +1,5 @@
 import { cn } from "@/utils/style"
+import { Overlay } from "../layout/Overlay"
 
 interface ModalProps {
   title: string
@@ -17,7 +18,7 @@ interface ModalWrapperProps {
 export function ModalWrapper({ active, children }: ModalWrapperProps) {
   return (
     <>
-      {/* <Overlay active={active} /> */}
+      <Overlay active={active} />
       <div
         tabIndex={-1}
         aria-hidden={active.valueOf()}
