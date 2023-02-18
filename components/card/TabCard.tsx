@@ -30,7 +30,7 @@ export default function TabCard({ tabSelected, tabs, body, children, onClick }: 
 export function TabVerticalCard({ tabSelected, tabs, body, children, onClick }: TabCardProps) {
   return (
     <div className={cn('flex', 'rounded-lg bg-white shadow-md', 'dark:bg-gray-800')}>
-      <div className='flex w-80 flex-col'>
+      <div className='flex shrink-0 grow-0 basis-1/4 flex-col'>
         {tabs.map((item) => (
           <TabCardItem
             key={item.value}

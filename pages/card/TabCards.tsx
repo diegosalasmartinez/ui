@@ -6,6 +6,7 @@ import FlatButton from '@/components/button/FlatButton'
 const tabs = [
   { value: '1', label: 'Page 1' },
   { value: '2', label: 'Page 2' },
+  { value: '3', label: 'Page too large' },
 ]
 
 export default function TabCards() {
