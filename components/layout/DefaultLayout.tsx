@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { QuickNavSectionInterface } from '@/interfaces/QuickNav'
 import QuickNav from './QuickNav'
 import Sidebar from './Sidebar'
+import Header from './Header'
 
 interface DefaultLayoutProps {
   title?: string
@@ -16,6 +17,7 @@ export default function DefaultLayout({ title = 'My Planner', nav, children }: D
         <title>{title}</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Header />
       <div className='flex h-screen w-screen'>
         <Sidebar />
         <div className='w-full overflow-y-auto bg-gray-200'>

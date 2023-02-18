@@ -40,26 +40,23 @@ export default function Sidebar() {
   return (
     <div aria-label='Sidebar' className='h-full w-64'>
       <div className='flex h-full flex-col justify-between overflow-y-auto border-r border-r-gray-300 bg-white py-4 px-3 dark:bg-gray-800'>
-        <div>
-          <span className='self-center whitespace-nowrap text-xl font-semibold dark:text-white'>UI Design System</span>
-          <ul className='mt-4 space-y-2'>
-            <li>
-              <RouteLink path='/accordion' actualRoute={actualRoute} handleClick={handleClick}>
-                <p>Accordion</p>
-              </RouteLink>
-            </li>
-            <li>
-              <RouteLink path='/card' actualRoute={actualRoute} handleClick={handleClick}>
-                <p>Card</p>
-              </RouteLink>
-            </li>
-            <li>
-              <RouteLink path='/modal' actualRoute={actualRoute} handleClick={handleClick}>
-                <p>Modal</p>
-              </RouteLink>
-            </li>
-          </ul>
-        </div>
+        <ul className='mt-4 space-y-2'>
+          <li>
+            <RouteLink path='/accordion' actualRoute={actualRoute} handleClick={handleClick}>
+              <p>Accordion</p>
+            </RouteLink>
+          </li>
+          <li>
+            <RouteLink path='/card' actualRoute={actualRoute} handleClick={handleClick}>
+              <p>Card</p>
+            </RouteLink>
+          </li>
+          <li>
+            <RouteLink path='/modal' actualRoute={actualRoute} handleClick={handleClick}>
+              <p>Modal</p>
+            </RouteLink>
+          </li>
+        </ul>
       </div>
     </div>
   )
