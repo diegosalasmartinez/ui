@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { cn } from '@/utils/style'
-import TabCard, { TabCardContent } from '@/components/card/TabCard'
+import TabCard, { TabCardContent, TabVerticalCard } from '@/components/card/TabCard'
 import FlatButton from '@/components/button/FlatButton'
 
 const tabs = [
   { value: '1', label: 'Page 1' },
   { value: '2', label: 'Page 2' },
+  { value: '3', label: 'Page too large' },
 ]
 
 export default function TabCards() {
@@ -28,7 +29,7 @@ export default function TabCards() {
             tempora commodi.
           </TabCardContent>
         </TabCard>
-        <TabCard tabSelected={tab} tabs={tabs} onClick={(value) => setTab(value)}>
+        <TabVerticalCard tabSelected={tab} tabs={tabs} onClick={(value) => setTab(value)}>
           <TabCardContent value='1' tab={tab}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt repudiandae suscipit iste aperiam labore?
             <span className='font-bold'> Lorem ipsum dolor sit amet consectet? </span>
@@ -39,12 +40,12 @@ export default function TabCards() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea unde eveniet aliquid voluptates facilis libero
             ex laborum dolores, minus impedit, illo, quibusdam fugit neque voluptatem voluptatum! Eaque velit voluptas
             ullam.
-            <div className='mt-1 flex justify-end gap-2'>
+            <div className='mt-3 flex justify-end gap-2'>
               <FlatButton text='Cancel' category='secondary' />
               <FlatButton text='Accept' />
             </div>
           </TabCardContent>
-        </TabCard>
+        </TabVerticalCard>
       </div>
     </div>
   )
