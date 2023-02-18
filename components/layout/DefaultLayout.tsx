@@ -21,7 +21,7 @@ export default function DefaultLayout({ title = 'My Planner', nav, children }: D
         <div className='w-full overflow-y-auto bg-gray-200'>
           <div className='my-0 mx-auto flex w-11/12 max-w-7xl flex-col justify-center py-4'>{children}</div>
         </div>
-        <QuickNav nav={nav}/>
+        <QuickNav nav={nav} />
       </div>
     </div>
   )

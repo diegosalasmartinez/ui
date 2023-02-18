@@ -1,5 +1,5 @@
-import { cn } from "@/utils/style"
-import { Overlay } from "../layout/Overlay"
+import { cn } from '@/utils/style'
+import { Overlay } from '../layout/Overlay'
 
 interface ModalProps {
   title: string

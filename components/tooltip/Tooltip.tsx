@@ -1,4 +1,4 @@
-import { cn } from "@/utils/style"
+import { cn } from '@/utils/style'
 
 interface TooltipProps {
   title: string
