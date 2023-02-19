@@ -1,11 +1,11 @@
 import { cn } from '@/utils/style'
 
-interface FlatButtonProps {
+interface BasicButtonProps {
   text: string
   category?: 'primary' | 'secondary'
 }
 
-export default function FlatButton({ text, category = 'primary' }: FlatButtonProps) {
+export default function BasicButton({ text, category = 'primary' }: BasicButtonProps) {
   return (
     <button
       type='button'
