@@ -10,7 +10,7 @@ interface TabCardProps {
 
 export default function TabCard({ tabSelected, tabs, body, children, onClick }: TabCardProps) {
   return (
-    <div className={cn('flex flex-col', 'rounded-lg bg-white shadow-md', 'dark:bg-gray-800')}>
+    <div className={cn('flex flex-col', 'rounded-lg bg-white shadow-md border-gray-200 border-[0.5px]', 'dark:bg-gray-800')}>
       <div className='flex'>
         {tabs.map((item) => (
           <TabCardItem
@@ -29,7 +29,7 @@ export default function TabCard({ tabSelected, tabs, body, children, onClick }: 
 
 export function TabVerticalCard({ tabSelected, tabs, body, children, onClick }: TabCardProps) {
   return (
-    <div className={cn('flex', 'rounded-lg bg-white shadow-md', 'dark:bg-gray-800')}>
+    <div className={cn('flex', 'rounded-lg bg-white shadow-md border-gray-200 border-[0.5px]', 'dark:bg-gray-800')}>
       <div className='flex shrink-0 grow-0 basis-1/4 flex-col'>
         {tabs.map((item) => (
           <TabCardItem
