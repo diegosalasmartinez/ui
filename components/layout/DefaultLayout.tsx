@@ -20,7 +20,9 @@ export default function DefaultLayout({ title = 'My Planner', nav, children }: D
       <Header />
       <div className='flex h-[calc(100vh-61px)] w-full px-3'>
         <Sidebar />
-        <div className='my-0 mx-auto flex w-[calc(100%-200px)] flex-col overflow-y-auto py-4 xl:w-[calc(100%-400px)]'>{children}</div>
+        <div className='my-0 mx-auto flex w-[calc(100%-200px)] flex-col overflow-y-auto p-4 xl:w-[calc(100%-400px)]'>
+          {children}
+        </div>
         <QuickNav nav={nav} />
       </div>
     </div>

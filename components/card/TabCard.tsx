@@ -10,7 +10,13 @@ interface TabCardProps {
 
 export default function TabCard({ tabSelected, tabs, body, children, onClick }: TabCardProps) {
   return (
-    <div className={cn('flex flex-col', 'rounded-lg bg-white shadow-md border-gray-200 border-[0.5px]', 'dark:bg-gray-800')}>
+    <div
+      className={cn(
+        'flex flex-col',
+        'rounded-lg bg-white shadow-md border-gray-200 border-[0.5px]',
+        'dark:bg-gray-800',
+      )}
+    >
       <div className='flex'>
         {tabs.map((item) => (
           <TabCardItem
