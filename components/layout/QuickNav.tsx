@@ -12,7 +12,7 @@ export default function QuickNav({ nav }: QuickNavProps) {
       {nav?.map((item) => (
         <ul className='pt-2' key={item.title}>
           <li>
-            <Link href={`#${item.href}`} className='text-gray-600'>
+            <Link href={`#${item.href}`} className='text-base text-gray-600'>
               {item.title}
             </Link>
             <ul className='pl-4'>
