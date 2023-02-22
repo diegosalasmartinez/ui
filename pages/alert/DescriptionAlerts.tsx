@@ -7,24 +7,30 @@ export default function DescriptionAlerts() {
       <h1 className='mb-4 text-xl font-bold'>Description Alerts</h1>
         <div className={cn('grid grid-cols-1 gap-4', 'md:grid-cols-2')}>
           <BasicAlert
-            title='Excelente!'
-            message='El usuario ha sido agregado correctamente.'
+            title='Look here!'
             type='success'
-          />
+          >
+            This is a success alert.
+          </BasicAlert>
           <BasicAlert
-            title='Excelente!'
-            message='Este es un alert de info.'
+            title='Look here!'
             type='info'
-          />
+          >
+            This is an info alert.
+          </BasicAlert>
           <BasicAlert
-            title='Excelente!'
-            message='Este es un alert de warning.'
+            title='Look here!'
+            message='This is a warning alert.'
             type='warning'
           />
           <BasicAlert
-            title='Excelente!'
-            message='Este es un alert de error.'
+            title='Look here!'
+            message='This is an error alert.'
             type='error'
+          />
+          <BasicAlert
+            title='Look here!'
+            message='This is a no type alert.'
           />
         </div>
     </div>

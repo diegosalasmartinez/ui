@@ -7,21 +7,14 @@ export default function BasicAlerts() {
       <h1 className='mb-4 text-xl font-bold'>Basic Alerts</h1>
       <div className={cn('grid grid-cols-1 gap-4', 'md:grid-cols-2')}>
         <BasicAlert type='success'>
-          Magni error perferendis rerum corrupti accusamus cum itaque ducimus asperiores, sequi doloribus fuga nam
-          earum nisi.
+          This is a success alert.
         </BasicAlert>
         <BasicAlert type='info'>
-          Magni error perferendis rerum corrupti accusamus cum itaque ducimus asperiores, sequi doloribus fuga nam
-          earum nisi.
+          This is an info alert.
         </BasicAlert>
-        <BasicAlert type='warning'>
-          Magni error perferendis rerum corrupti accusamus cum itaque ducimus asperiores, sequi doloribus fuga nam
-          earum nisi.
-        </BasicAlert>
-        <BasicAlert type='error'>
-          Magni error perferendis rerum corrupti accusamus cum itaque ducimus asperiores, sequi doloribus fuga nam
-          earum nisi.
-        </BasicAlert>
+        <BasicAlert type='warning' message='This is a warning alert.' />
+        <BasicAlert type='error' message='This is an error alert.' />
+        <BasicAlert message='This is a no type alert.' />
       </div>
     </div>
   )
