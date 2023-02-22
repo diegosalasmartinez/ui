@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { cn } from '@/utils/style'
-import FlatButton from '../button/FlatButton'
+import FlatButton from '@/components/button/FlatButton'
 
 interface BasicCardProps {
   title: string
@@ -10,7 +10,13 @@ interface BasicCardProps {
 
 export default function BasicCard({ title, body, children }: BasicCardProps) {
   return (
-    <div className={cn('flex flex-col justify-between', 'rounded-lg bg-white p-4 shadow-md', 'dark:bg-gray-800')}>
+    <div
+      className={cn(
+        'flex flex-col justify-between',
+        'rounded-lg bg-white p-4 shadow-md border-gray-200 border-[0.5px]',
+        'dark:bg-gray-800',
+      )}
+    >
       <div className='mb-2'>
         <Link
           href={`/card`}
