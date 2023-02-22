@@ -47,6 +47,11 @@ export default function Sidebar() {
             </RouteLink>
           </li>
           <li>
+            <RouteLink path='/alert' actualRoute={actualRoute} handleClick={handleClick}>
+              <p>Alert</p>
+            </RouteLink>
+          </li>
+          <li>
             <RouteLink path='/card' actualRoute={actualRoute} handleClick={handleClick}>
               <p>Card</p>
             </RouteLink>
