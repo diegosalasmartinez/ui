@@ -18,7 +18,7 @@ function RouteLink({ path, actualRoute, handleClick, children }: RouteLinkProps)
         onClick={(e) => handleClick(e, path)}
         className={cn(
           path === actualRoute ? 'bg-zinc-200 text-gray-900' : 'bg-white text-gray-600 hover:bg-gray-100',
-          'flex items-center rounded-lg px-3 py-1.5 text-base font-normal transition duration-200',
+          'flex items-center rounded-lg px-3 py-1.5 text-sm font-normal transition duration-200',
           'dark:text-white dark:hover:bg-gray-700 dark:hover:text-white',
         )}
       >
