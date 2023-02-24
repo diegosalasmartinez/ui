@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { cn } from '@/utils/style'
 import TabCard, { TabCardContent, TabVerticalCard } from '@/components/card/TabCard'
-import FlatButton from '@/components/button/FlatButton'
+import BasicButton from '@/components/button/BasicButton'
 
 const tabs = [
   { value: '1', label: 'Page 1' },
@@ -41,8 +41,8 @@ export default function TabCards() {
             ex laborum dolores, minus impedit, illo, quibusdam fugit neque voluptatem voluptatum! Eaque velit voluptas
             ullam.
             <div className='mt-3 flex justify-end gap-2'>
-              <FlatButton text='Cancel' category='secondary' />
-              <FlatButton text='Accept' />
+              <BasicButton text='Cancel' category='secondary' />
+              <BasicButton text='Accept' />
             </div>
           </TabCardContent>
         </TabVerticalCard>

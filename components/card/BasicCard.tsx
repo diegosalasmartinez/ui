@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { cn } from '@/utils/style'
-import FlatButton from '@/components/button/FlatButton'
+import BasicButton from '@/components/button/BasicButton'
 
 interface BasicCardProps {
   title: string
@@ -32,8 +32,8 @@ export default function BasicCard({ title, body, children }: BasicCardProps) {
         <p className='my-2 text-sm text-gray-600 dark:text-gray-300'>{children ?? body}</p>
       </div>
       <div className='flex justify-end gap-2'>
-        <FlatButton text='Cancel' category='secondary' />
-        <FlatButton text='Accept' />
+        <BasicButton text='Cancel' category='secondary' />
+        <BasicButton text='Accept' />
       </div>
     </div>
   )
