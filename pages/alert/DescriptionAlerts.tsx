@@ -28,10 +28,6 @@ export default function DescriptionAlerts() {
             message='This is an error alert.'
             type='error'
           />
-          <BasicAlert
-            title='Look here!'
-            message='This is a no type alert.'
-          />
         </div>
     </div>
   )

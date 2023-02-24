@@ -14,7 +14,6 @@ export default function BasicAlerts() {
         </BasicAlert>
         <BasicAlert type='warning' message='This is a warning alert.' />
         <BasicAlert type='error' message='This is an error alert.' />
-        <BasicAlert message='This is a no type alert.' />
       </div>
     </div>
   )

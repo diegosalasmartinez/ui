@@ -17,7 +17,6 @@ export default function IconAlerts() {
             icon
             title='Look here!'
             type='info'
-            closable
           >
             This is an info alert.
           </BasicAlert>
@@ -36,11 +35,11 @@ export default function IconAlerts() {
           <BasicAlert
             icon
             type='warning'
-            message='This is a no type alert.'
+            message='This is a warning alert.'
           />
           <BasicAlert
             icon
-            type='warning'
+            type='error'
             title='Look here!'
           />
         </div>
