@@ -46,11 +46,14 @@ export default function Sidebar() {
           <RouteLink path='/accordion' actualRoute={actualRoute} handleClick={handleClick}>
             Accordion
           </RouteLink>
-          <RouteLink path='/card' actualRoute={actualRoute} handleClick={handleClick}>
-            Card
+          <RouteLink path='/alert' actualRoute={actualRoute} handleClick={handleClick}>
+            Alert
           </RouteLink>
           <RouteLink path='/button' actualRoute={actualRoute} handleClick={handleClick}>
             Button
+          </RouteLink>
+          <RouteLink path='/card' actualRoute={actualRoute} handleClick={handleClick}>
+            Card
           </RouteLink>
           <RouteLink path='/modal' actualRoute={actualRoute} handleClick={handleClick}>
             Modal
