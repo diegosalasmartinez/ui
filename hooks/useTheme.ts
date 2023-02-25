@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react"
+import { useBoundStore } from "@/store";
+import { useEffect } from "react"
 
 export default function useTheme() {
-    const [theme, setTheme] = useState('light')
-    // const theme = useBoundStore((state) => state.actualRoute)
-    // const setTheme = useBoundStore((state) => state.setActualRoute)
+    const theme = useBoundStore((state) => state.theme)
+    const setTheme = useBoundStore((state) => state.setTheme)
 
     useEffect(() => {
         window.matchMedia('(prefers-color-scheme: dark)')
