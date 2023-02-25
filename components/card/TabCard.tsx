@@ -2,7 +2,7 @@ import { cn } from '@/utils/style'
 
 interface TabCardProps {
   tabSelected: string
-  tabs: { value: string; label: string }[]
+  tabs: { value: string; label: string; disabled?: boolean }[]
   body?: string
   children?: React.ReactNode
   onClick: (value: string) => void
@@ -24,6 +24,7 @@ export default function TabCard({ tabSelected, tabs, body, children, onClick }: 
             value={item.value}
             text={item.label}
             active={tabSelected === item.value}
+            disabled={item?.disabled}
             onClick={onClick}
           />
         ))}
@@ -44,6 +45,7 @@ export function TabVerticalCard({ tabSelected, tabs, body, children, onClick }: 
             value={item.value}
             text={item.label}
             active={tabSelected === item.value}
+            disabled={item?.disabled}
             onClick={onClick}
           />
         ))}
@@ -57,26 +59,28 @@ interface TabCardItemProps {
   value: string
   text: string
   active: boolean
+  disabled?: boolean
   vertical?: boolean
   onClick: (value: string) => void
 }
 
-function TabCardItem({ value, text, vertical = false, active, onClick }: TabCardItemProps) {
+function TabCardItem({ value, text, vertical = false, active, disabled = false, onClick }: TabCardItemProps) {
   const handleClickTab = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.stopPropagation()
-    onClick(value)
+    if (!disabled) onClick(value)
   }
 
   return (
     <div
       className={cn(
-        'px-5 pt-3 pb-2 text-sm text-gray-900 hover:cursor-pointer ',
+        'px-5 pt-3 pb-2 text-sm',
         vertical
           ? 'border-l-2 border-l-transparent hover:border-l-2 hover:border-l-indigo-300'
           : 'border-b-2 border-b-transparent hover:border-b-2 hover:border-b-indigo-300',
         active ? ' font-medium bg-indigo-50' : '',
-        active && vertical ? 'border-l-2 border-l-indigo-700 hover:border-l-indigo-700' : '',
-        active && !vertical ? 'border-b-2 border-b-indigo-700 hover:border-b-indigo-700' : '',
+        active && vertical && 'border-l-2 border-l-indigo-700 hover:border-l-indigo-700',
+        active && !vertical && 'border-b-2 border-b-indigo-700 hover:border-b-indigo-700',
+        disabled ? 'text-gray-400 hover:cursor-auto hover:border-transparent' : 'text-gray-900 hover:cursor-pointer',
       )}
       onClick={handleClickTab}
     >

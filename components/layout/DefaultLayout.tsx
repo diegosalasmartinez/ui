@@ -18,7 +18,7 @@ export default function DefaultLayout({ title = 'My Planner', nav, children }: D
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <div className='flex h-[calc(100vh-61px)] w-full px-3'>
+      <div className='flex h-[calc(100vh-61px)] w-full bg-white px-3 dark:bg-black'>
         <Sidebar />
         <div className='my-0 mx-auto flex w-[calc(100%-200px)] flex-col overflow-y-auto p-4 xl:w-[calc(100%-400px)]'>
           {children}

@@ -4,9 +4,9 @@ import TabCard, { TabCardContent, TabVerticalCard } from '@/components/card/TabC
 import BasicButton from '@/components/button/BasicButton'
 
 const tabs = [
-  { value: '1', label: 'Page 1' },
-  { value: '2', label: 'Page 2' },
-  { value: '3', label: 'Page too large' },
+  { value: '1', label: 'Page One' },
+  { value: '2', label: 'Page Two (disabled)', disabled: true },
+  { value: '3', label: 'Page Three' },
 ]
 
 export default function TabCards() {
@@ -28,6 +28,15 @@ export default function TabCards() {
             reprehenderit placeat, totam ipsum quas accusantium ipsam quasi obcaecati labore fugit animi, ab illum
             tempora commodi.
           </TabCardContent>
+          <TabCardContent value='3' tab={tab}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea unde eveniet aliquid voluptates facilis libero
+            ex laborum dolores, minus impedit, illo, quibusdam fugit neque voluptatem voluptatum! Eaque velit voluptas
+            ullam.
+            <div className='mt-3 flex justify-end gap-2'>
+              <BasicButton text='Cancel' category='secondary' />
+              <BasicButton text='Accept' />
+            </div>
+          </TabCardContent>
         </TabCard>
         <TabVerticalCard tabSelected={tab} tabs={tabs} onClick={(value) => setTab(value)}>
           <TabCardContent value='1' tab={tab}>
@@ -40,6 +49,23 @@ export default function TabCards() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea unde eveniet aliquid voluptates facilis libero
             ex laborum dolores, minus impedit, illo, quibusdam fugit neque voluptatem voluptatum! Eaque velit voluptas
             ullam.
+            <div className='mt-3 flex justify-end gap-2'>
+              <BasicButton text='Cancel' category='secondary' />
+              <BasicButton text='Accept' />
+            </div>
+          </TabCardContent>
+          <TabCardContent value='3' tab={tab}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea unde eveniet aliquid voluptates facilis libero
+            ex laborum dolores, minus impedit, illo, quibusdam fugit neque voluptatem voluptatum!
+            <ul className='list-inside list-disc'>
+              <li>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, ad eaque ipsum possimus nihil
+                perspiciatis!
+              </li>
+              <li>
+                Ut, perferendis porro accusamus, illo voluptatum repudiandae minima saepe distinctio,
+              </li>
+            </ul>
             <div className='mt-3 flex justify-end gap-2'>
               <BasicButton text='Cancel' category='secondary' />
               <BasicButton text='Accept' />

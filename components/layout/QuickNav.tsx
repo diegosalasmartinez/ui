@@ -12,13 +12,13 @@ export default function QuickNav({ nav }: QuickNavProps) {
       {nav?.map((item) => (
         <ul className='pt-2' key={item.title}>
           <li>
-            <Link href={`#${item.href}`} className='text-sm text-gray-600'>
+            <Link href={`#${item.href}`} className='text-sm text-gray-600 dark:text-zinc-400'>
               {item.title}
             </Link>
             <ul className='pl-4'>
               {item.children?.map((subItem) => (
                 <li key={subItem.title}>
-                  <Link href={`#${subItem.href}`} className='text-gray-600'>
+                  <Link href={`#${subItem.href}`} className='text-gray-600 dark:text-zinc-400'>
                     {subItem.title}
                   </Link>
                 </li>
