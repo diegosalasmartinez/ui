@@ -6,7 +6,7 @@ export default function ThemeToggler() {
   return (
     <div>
       <div>
-        <label className='inline-block pr-[5px] hover:cursor-pointer' htmlFor='flexSwitchCheckDefault'>
+        <label className='inline-block pr-[5px] text-black hover:cursor-pointer dark:text-white' htmlFor='flexSwitchCheckDefault'>
           🌙 Light mode
         </label>
         <input
@@ -18,7 +18,7 @@ export default function ThemeToggler() {
           onClick={toggleTheme}
           checked={theme === 'dark'}
         />
-        <label className='inline-block pl-[5px] hover:cursor-pointer' htmlFor='flexSwitchCheckDefault'>
+        <label className='inline-block pl-[5px] text-black hover:cursor-pointer dark:text-white' htmlFor='flexSwitchCheckDefault'>
           ☀️ Dark mode
         </label>
       </div>
