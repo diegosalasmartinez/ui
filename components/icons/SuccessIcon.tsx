@@ -6,7 +6,7 @@ interface SuccessIconProps {
 }
 
 export default function SuccessIcon({ fill, color }: SuccessIconProps) {
-  return(
+  return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       fill={fill}

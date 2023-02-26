@@ -6,12 +6,8 @@ export default function BasicAlerts() {
     <div id='basic-alerts' className='mb-6'>
       <h1 className='mb-4 text-xl font-bold'>Basic Alerts</h1>
       <div className={cn('grid grid-cols-1 gap-4', 'md:grid-cols-2')}>
-        <BasicAlert type='success'>
-          This is a success alert.
-        </BasicAlert>
-        <BasicAlert type='info'>
-          This is an info alert.
-        </BasicAlert>
+        <BasicAlert type='success'>This is a success alert.</BasicAlert>
+        <BasicAlert type='info'>This is an info alert.</BasicAlert>
         <BasicAlert type='warning' message='This is a warning alert.' />
         <BasicAlert type='error' message='This is an error alert.' />
       </div>
