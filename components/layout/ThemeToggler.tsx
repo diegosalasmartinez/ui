@@ -3,11 +3,17 @@ import { cn } from '@/utils/style'
 
 export default function ThemeToggler() {
   const { theme, toggleTheme } = useTheme()
-  
+
   return (
     <div>
       <div>
-        <label className={cn('inline-block pr-[5px] text-black hover:cursor-pointer dark:text-white', theme === 'light' ? '' : 'grayscale')} htmlFor='flexSwitchCheckDefault'>
+        <label
+          className={cn(
+            'inline-block pr-[5px] text-black hover:cursor-pointer dark:text-white',
+            theme === 'light' ? '' : 'grayscale',
+          )}
+          htmlFor='flexSwitchCheckDefault'
+        >
           ☀️
         </label>
         <input
@@ -19,7 +25,13 @@ export default function ThemeToggler() {
           onClick={toggleTheme}
           checked={theme === 'dark'}
         />
-        <label className={cn('inline-block pl-[5px] text-black hover:cursor-pointer dark:text-white', theme === 'light' ? 'grayscale' : '')} htmlFor='flexSwitchCheckDefault'>
+        <label
+          className={cn(
+            'inline-block pl-[5px] text-black hover:cursor-pointer dark:text-white',
+            theme === 'light' ? 'grayscale' : '',
+          )}
+          htmlFor='flexSwitchCheckDefault'
+        >
           🌙
         </label>
       </div>

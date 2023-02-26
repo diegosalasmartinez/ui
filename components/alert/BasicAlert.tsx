@@ -65,9 +65,9 @@ export default function BasicAlert({ title, message, type, icon, closable, child
             </span>
           </div>
           { closable && 
-            <span className={cn('p-1 mr-1 rounded-full self-center cursor-pointer', getHoverStyle())} onClick={() => setIsActive(false)}>
+            <button className={cn('p-1 mr-1 rounded-full self-center cursor-pointer', getHoverStyle())} onClick={() => setIsActive(false)}>
               <CloseIcon fill='none' color={getTextStyle()} />
-            </span>
+            </button>
           }
         </div>
       }

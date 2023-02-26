@@ -6,7 +6,7 @@ interface CloseIconProps {
 }
 
 export default function CloseIcon({ fill, color }: CloseIconProps) {
-  return(
+  return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       fill={fill}
@@ -15,11 +15,7 @@ export default function CloseIcon({ fill, color }: CloseIconProps) {
       stroke='currentColor'
       className={cn('h-5 w-5', color)}
     >
-      <path
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        d='M6 18L18 6M6 6l12 12'
-      />
+      <path stroke-linecap='round' stroke-linejoin='round' d='M6 18L18 6M6 6l12 12' />
     </svg>
   )
 }
