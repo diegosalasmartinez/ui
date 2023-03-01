@@ -32,7 +32,7 @@ export default function BasicButton({
     <button
       type='button'
       className={cn(
-        'rounded-lg px-4 py-2 text-center text-sm font-medium text-white',
+        'rounded-lg px-4 py-2 text-center text-base font-medium text-white',
         'focus:outline-none focus:ring-4',
         getColor(),
       )}
