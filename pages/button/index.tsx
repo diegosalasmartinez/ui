@@ -11,7 +11,7 @@ export default function Button() {
   return (
     <DefaultLayout title='UI Design System' nav={nav}>
       <BasicButtons />
-      <OutlineButtons/>
+      <OutlineButtons />
       {/* <OutlineButtons />
       <TextButtons />
       <IconButtons />
