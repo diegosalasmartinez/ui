@@ -62,9 +62,7 @@ export default function TabCards() {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, ad eaque ipsum possimus nihil
                 perspiciatis!
               </li>
-              <li>
-                Ut, perferendis porro accusamus, illo voluptatum repudiandae minima saepe distinctio,
-              </li>
+              <li>Ut, perferendis porro accusamus, illo voluptatum repudiandae minima saepe distinctio,</li>
             </ul>
             <div className='mt-3 flex justify-end gap-2'>
               <BasicButton text='Cancel' category='secondary' />
