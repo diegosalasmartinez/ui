@@ -36,6 +36,8 @@ export default function BasicButton({
         'focus:outline-none focus:ring-4',
         getColor(),
       )}
+      disabled={disabled}
+      onClick={onClick}
     >
       {text}
     </button>
