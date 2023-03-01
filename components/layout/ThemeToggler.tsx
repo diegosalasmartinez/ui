@@ -10,7 +10,7 @@ export default function ThemeToggler() {
         <label
           className={cn(
             'inline-block pr-[5px] text-black hover:cursor-pointer dark:text-white',
-            theme === 'light' ? '' : 'grayscale',
+            theme === 'light' && 'grayscale',
           )}
           htmlFor='flexSwitchCheckDefault'
         >
@@ -28,7 +28,7 @@ export default function ThemeToggler() {
         <label
           className={cn(
             'inline-block pl-[5px] text-black hover:cursor-pointer dark:text-white',
-            theme === 'light' ? 'grayscale' : '',
+            theme === 'light' && 'grayscale',
           )}
           htmlFor='flexSwitchCheckDefault'
         >

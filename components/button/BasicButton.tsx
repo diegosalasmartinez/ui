@@ -3,9 +3,16 @@ import { cn } from '@/utils/style'
 interface BasicButtonProps {
   text: string
   category?: 'primary' | 'secondary' | 'error' | 'success'
+  disabled?: boolean
+  onClick?: (data: any) => void
 }
 
-export default function BasicButton({ text, category = 'primary' }: BasicButtonProps) {
+export default function BasicButton({
+  text,
+  category = 'primary',
+  disabled = false,
+  onClick = () => {},
+}: BasicButtonProps) {
   const getColor = () => {
     switch (category) {
       case 'primary':
@@ -25,10 +32,12 @@ export default function BasicButton({ text, category = 'primary' }: BasicButtonP
     <button
       type='button'
       className={cn(
-        'rounded-lg px-4 py-2 text-center text-sm font-medium text-white',
+        'rounded-lg px-4 py-2 text-center text-base font-medium text-white',
         'focus:outline-none focus:ring-4',
         getColor(),
       )}
+      disabled={disabled}
+      onClick={onClick}
     >
       {text}
     </button>
