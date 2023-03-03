@@ -74,8 +74,7 @@ export default function BasicAlert({ title, message, type, icon, closable, child
         <div className={cn('flex flex-row rounded-lg p-2', getAlertStyle())}>
           {icon && <span className='ml-2 self-center'>{getIcon()}</span>}
           <div className={cn('ml-4 basis-full', getTextStyle())}>
-            <span className='text-lg font-bold'>{title}</span>
-            {title && <br />}
+            <span className='flex flex-col text-lg font-bold'>{title}</span>
             <span className='text-base'>{children ?? message}</span>
           </div>
           {closable && (
