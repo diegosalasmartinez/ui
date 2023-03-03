@@ -60,6 +60,9 @@ export default function Sidebar() {
           <RouteLink path='/modal' actualRoute={actualRoute} handleClick={handleClick}>
             Modal
           </RouteLink>
+          <RouteLink path='/notification' actualRoute={actualRoute} handleClick={handleClick}>
+            Notification
+          </RouteLink>
         </ul>
       </div>
     </div>
